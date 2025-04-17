@@ -9,7 +9,7 @@ public class PlayerCollisionManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Floor"))
             OnGroundCollision?.Invoke(this, EventArgs.Empty);
         if (collision.gameObject.CompareTag("Enemy"))
             OnEnemyCollision?.Invoke(this, EventArgs.Empty);
@@ -17,7 +17,7 @@ public class PlayerCollisionManager : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Floor"))
             OnLeftGround?.Invoke(this, EventArgs.Empty);
     }
 }
