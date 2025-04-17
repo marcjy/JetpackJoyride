@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 105903502}
   m_Layer: 0
   m_Name: Background_0
-  m_TagString: GameLimit
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 185742064}
   m_Layer: 0
   m_Name: Background_1
-  m_TagString: GameLimit
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 640074452}
   - component: {fileID: 640074451}
   - component: {fileID: 640074450}
+  - component: {fileID: 640074453}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -867,6 +868,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308a9311056eb914b9d15916c32d3ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &640074453
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640074445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ccaf64d5b907f54eadcff0a248379b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &728738230
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +902,7 @@ GameObject:
   - component: {fileID: 728738232}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1035,7 +1058,7 @@ GameObject:
   - component: {fileID: 2040408995}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
