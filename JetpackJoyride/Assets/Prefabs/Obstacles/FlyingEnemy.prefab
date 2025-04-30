@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3144726159961960194}
   - component: {fileID: 4466169496913896648}
   - component: {fileID: 6056414430631101514}
+  - component: {fileID: 5932529311085994261}
   m_Layer: 0
   m_Name: FlyingEnemy
   m_TagString: Enemy
@@ -157,3 +158,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.0115811, y: 1.251909}
   m_EdgeRadius: 0
+--- !u!114 &5932529311085994261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7845862565816857426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03754728ae822f4182e831d0a3fb260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxPositionY: 2.65
+  MinPositionY: -2.65
+  DistanceTraveled: 3
