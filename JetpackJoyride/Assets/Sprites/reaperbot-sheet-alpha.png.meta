@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: ac5c6955cd301184c9c2bdfa85b6d811
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6924151977926895950
+    second: reaperbot-sheet-alpha_0
+  - first:
+      213: -6205813549386434592
+    second: reaperbot-sheet-alpha_1
+  - first:
+      213: 5897183162657454876
+    second: reaperbot-sheet-alpha_2
+  - first:
+      213: 467000766442439220
+    second: reaperbot-sheet-alpha_3
+  - first:
+      213: 4754792882634562730
+    second: reaperbot-sheet-alpha_4
+  - first:
+      213: 7064981797969737600
+    second: reaperbot-sheet-alpha_5
+  - first:
+      213: 133677247366702619
+    second: reaperbot-sheet-alpha_6
+  - first:
+      213: 29518413634179654
+    second: reaperbot-sheet-alpha_7
+  - first:
+      213: 189017132912960030
+    second: reaperbot-sheet-alpha_8
+  - first:
+      213: -1729822364871122073
+    second: reaperbot-sheet-alpha_9
+  - first:
+      213: -7847386505411776358
+    second: reaperbot-sheet-alpha_10
+  - first:
+      213: -8246402175737422705
+    second: reaperbot-sheet-alpha_11
+  - first:
+      213: -479058286510444949
+    second: reaperbot-sheet-alpha_12
+  - first:
+      213: 5021138324704745843
+    second: reaperbot-sheet-alpha_13
+  - first:
+      213: 2113630957548643136
+    second: reaperbot-sheet-alpha_14
+  - first:
+      213: -6561629615649112370
+    second: reaperbot-sheet-alpha_15
+  - first:
+      213: 5778060423094390875
+    second: reaperbot-sheet-alpha_16
+  - first:
+      213: 1745850104676104141
+    second: reaperbot-sheet-alpha_17
+  - first:
+      213: 5916595087498086323
+    second: reaperbot-sheet-alpha_18
+  - first:
+      213: 7769450458591276352
+    second: reaperbot-sheet-alpha_19
+  - first:
+      213: 2032625074828108399
+    second: reaperbot-sheet-alpha_20
+  - first:
+      213: 7991535091728793693
+    second: reaperbot-sheet-alpha_21
+  - first:
+      213: -8564841955505061808
+    second: reaperbot-sheet-alpha_22
+  - first:
+      213: 6291138021216276337
+    second: reaperbot-sheet-alpha_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e301cc0deeea3e429493195cbd5edff
+      internalID: -1987904405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5948c4550fbbe5c45b0a19afba057e74
+      internalID: -1465097005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2404ba87f9dbde4a87853b1065c6f0c
+      internalID: -859462373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bee04071d1bdd4698284b2156a0aef
+      internalID: -1373586149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a27159bf918cf47b0ab87e794a40f5
+      internalID: 2004308141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecf322d9be437d42b63d5f366b9ed31
+      internalID: -2613650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_6
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160254ec71edb024d97a5e81322872e6
+      internalID: -1255060672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_7
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 88
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61100b50b84df048bb010373323d23f
+      internalID: -232914852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca9d32340769d846b1e81c5f58ac1b6
+      internalID: -398151429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_9
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5abc0512296e946835a4d890a5037c
+      internalID: 864551233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5389364d6b466b04096a949444efe2fe
+      internalID: -1243383413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_11
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3c15ff16f08f84eb2520e37be45967
+      internalID: -1537012246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_12
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b1cad502fa4c74bbba8c72a1fb7dd0
+      internalID: -657525680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_13
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0aa52964d58e44aaff1795f039bc01
+      internalID: 2030668468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13a38946a6582d6459c382e6d831958b
+      internalID: -467951829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_15
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 44
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c768e255d0bc12f4cb704ff0cf27676b
+      internalID: -187376703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9ef7837825de749ac429746fe80ef0
+      internalID: 1776171340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_17
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4014c45b781bbde4db02b88a8ad1c376
+      internalID: -593741430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 691e745edd5fe4b48a0d5aa12ddff2b2
+      internalID: 1714493521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_19
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128ecbe4d395da84fa5be5afb714e2f8
+      internalID: 181911176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_20
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6fd472702f53140a6375778069de21
+      internalID: -181950585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778048df50a17074788d68a6c424687f
+      internalID: 2076144177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_22
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afb5a25acac57d42a1235a23ce80c48
+      internalID: 134260880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reaperbot-sheet-alpha_23
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 0
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b26ecc311f94924fb480f34189cb103
+      internalID: -17190473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fcb66c8b169ab534cbf66bb9dab07705
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      reaperbot-sheet-alpha_0: -1987904405
+      reaperbot-sheet-alpha_1: -1465097005
+      reaperbot-sheet-alpha_10: -1243383413
+      reaperbot-sheet-alpha_11: -1537012246
+      reaperbot-sheet-alpha_12: -657525680
+      reaperbot-sheet-alpha_13: 2030668468
+      reaperbot-sheet-alpha_14: -467951829
+      reaperbot-sheet-alpha_15: -187376703
+      reaperbot-sheet-alpha_16: 1776171340
+      reaperbot-sheet-alpha_17: -593741430
+      reaperbot-sheet-alpha_18: 1714493521
+      reaperbot-sheet-alpha_19: 181911176
+      reaperbot-sheet-alpha_2: -859462373
+      reaperbot-sheet-alpha_20: -181950585
+      reaperbot-sheet-alpha_21: 2076144177
+      reaperbot-sheet-alpha_22: 134260880
+      reaperbot-sheet-alpha_23: -17190473
+      reaperbot-sheet-alpha_3: -1373586149
+      reaperbot-sheet-alpha_4: 2004308141
+      reaperbot-sheet-alpha_5: -2613650
+      reaperbot-sheet-alpha_6: -1255060672
+      reaperbot-sheet-alpha_7: -232914852
+      reaperbot-sheet-alpha_8: -398151429
+      reaperbot-sheet-alpha_9: 864551233
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
