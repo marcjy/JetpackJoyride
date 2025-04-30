@@ -11,6 +11,11 @@ public abstract class BaseObstacle : MonoBehaviour
 
     public abstract void Init();
 
+    protected virtual void Start()
+    {
+
+    }
+
     protected virtual void Update()
     {
         transform.position += Vector3.left * SpeedX * Time.deltaTime;

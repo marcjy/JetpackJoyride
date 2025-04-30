@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3403988661073892718}
   - component: {fileID: 5164725024240379979}
   - component: {fileID: 8412578649022152553}
+  - component: {fileID: 2549661648010196798}
   m_Layer: 0
   m_Name: GroundedEnemy
   m_TagString: Enemy
@@ -157,3 +158,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2549661648010196798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8607014116557447486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfe32668cf5c71e419cdf379cbd5a441, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPositionX: 9.5
+  LimitPositionX: -10
+  SpeedX: 2
+  SpawnPositionY: -2.75
