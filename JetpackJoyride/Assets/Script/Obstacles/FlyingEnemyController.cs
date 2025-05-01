@@ -15,7 +15,7 @@ public class FlyingEnemyController : BaseObstacle
         transform.position = GetRandomPosition();
     }
 
-    void Start()
+    protected override void Start()
     {
         StartCoroutine(Move());
     }

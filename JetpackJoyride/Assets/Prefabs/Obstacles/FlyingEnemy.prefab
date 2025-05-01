@@ -170,6 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03754728ae822f4182e831d0a3fb260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnPositionX: 9.5
+  LimitPositionX: -10
+  SpeedX: 2
   MaxPositionY: 2.65
   MinPositionY: -2.65
-  DistanceTraveled: 3
+  MaxDistanceTraveled: 3
+  SpeedY: 2

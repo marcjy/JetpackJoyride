@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public abstract class BaseObstacle : MonoBehaviour
 {
+    public event EventHandler OnShouldBeReleased;
+
     [Header("Base")]
     public float SpawnPositionX = 9.5f;
 
@@ -21,6 +24,6 @@ public abstract class BaseObstacle : MonoBehaviour
         transform.position += Vector3.left * SpeedX * Time.deltaTime;
 
         if (transform.position.x < LimitPositionX)
-            Destroy(gameObject);
+            OnShouldBeReleased?.Invoke(this, EventArgs.Empty);
     }
 }
