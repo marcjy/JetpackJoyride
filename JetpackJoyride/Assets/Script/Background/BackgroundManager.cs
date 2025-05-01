@@ -21,7 +21,7 @@ public class BackgroundManager : MonoBehaviour
             _startingPositions.Add(childTransform.position);
         }
 
-
+        TurnOff();
     }
 
     public void TurnOn()
