@@ -10,14 +10,22 @@ public class FlyingEnemyController : BaseObstacle
     public float MaxDistanceTraveled;
     public float SpeedY;
 
+    private Coroutine _moveCoroutine;
+
     public override void Init()
     {
         transform.position = GetRandomPosition();
     }
 
-    protected override void Start()
+    void OnEnable()
     {
-        StartCoroutine(Move());
+        _moveCoroutine = StartCoroutine(Move());
+    }
+
+    private void OnDisable()
+    {
+        StopCoroutine(_moveCoroutine);
+        _moveCoroutine = null;
     }
 
     private IEnumerator Move()
@@ -42,5 +50,5 @@ public class FlyingEnemyController : BaseObstacle
         }
     }
 
-    private Vector3 GetRandomPosition() => new Vector3(SpawnPositionX, Random.Range(MinPositionY, MinPositionY));
+    private Vector3 GetRandomPosition() => new Vector3(SpawnPositionX, Random.Range(MinPositionY, MaxPositionY));
 }
