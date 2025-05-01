@@ -9,6 +9,8 @@ public class InputManager : MonoBehaviour
     public event EventHandler OnThrusting;
     public event EventHandler OnStopThrusting;
 
+    private bool _isPlaying = false;
+
     private void Awake()
     {
         if (Instance == null)
@@ -20,17 +22,17 @@ public class InputManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        UIManager.OnGameStart += OnPlayerStartedGame;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    private void OnPlayerStartedGame(object sender, EventArgs e) => _isPlaying = true;
 
-    }
 
     public void Thrust(CallbackContext callbackContext)
     {
+        if (!_isPlaying)
+            return;
+
         if (callbackContext.phase == UnityEngine.InputSystem.InputActionPhase.Performed)
             OnThrusting?.Invoke(this, EventArgs.Empty);
         if (callbackContext.phase == UnityEngine.InputSystem.InputActionPhase.Canceled)
