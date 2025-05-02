@@ -20,10 +20,12 @@ public class UIManager : MonoBehaviour
 
 
     private Vector3 _starshipInitialPosition;
+    private AudioSource _starshipAudioSource;
 
     private void Awake()
     {
-        _starshipInitialPosition = Starship.rectTransform.position;
+        _starshipInitialPosition = Starship.rectTransform.anchoredPosition;
+        _starshipAudioSource = Starship.GetComponent<AudioSource>();
     }
 
     public void StartGame()
@@ -40,23 +42,28 @@ public class UIManager : MonoBehaviour
     {
         StartGameText.gameObject.SetActive(true);
         BackgroundCanvasGroup.alpha = 1.0f;
-        Starship.rectTransform.position = _starshipInitialPosition;
         StartGameButton.gameObject.SetActive(true);
+
+        Starship.gameObject.SetActive(true);
+        Starship.rectTransform.anchoredPosition = _starshipInitialPosition;
     }
 
     private IEnumerator MoveStarship()
     {
+        _starshipAudioSource.Play();
+
         float elapsedTime = 0.0f;
 
         while (elapsedTime < StartGameAnimationDuration)
         {
-            Starship.rectTransform.position = Vector3.Lerp(_starshipInitialPosition, StarshipTargetDestination, elapsedTime / StartGameAnimationDuration);
+            Starship.rectTransform.anchoredPosition = Vector3.Lerp(_starshipInitialPosition, StarshipTargetDestination, elapsedTime / StartGameAnimationDuration);
             elapsedTime += Time.deltaTime;
 
             yield return null;
         }
 
         Starship.rectTransform.position = StarshipTargetDestination;
+        Starship.gameObject.SetActive(false);
     }
     private IEnumerator FadeOutBackground()
     {
