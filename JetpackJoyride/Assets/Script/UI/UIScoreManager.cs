@@ -22,21 +22,26 @@ public class UIScoreManager : MonoBehaviour
 
     private void Start()
     {
-        UIManager.OnGameStart += OnPlayerStartedGame;
+        UIManager.OnGameStart += PlayerStartedGame;
+
+        GameManager.OnPlayerScores += PlayerHasScored;
+        GameManager.OnPlayerReachedNewHighScore += PlayerHasNewHighScore;
     }
 
-    private void OnPlayerStartedGame(object sender, System.EventArgs e)
-    {
-        StartCoroutine(MoveScoresDownwards());
-    }
+    #region Event Handling
+    private void PlayerHasNewHighScore(object sender, int newHighScore) => SetHighestScore(newHighScore);
+    private void PlayerHasScored(object sender, int score) => UpdateCurrentScore(score);
 
-    public void UpdateCurrentScore(int score) => CurrentScoreText.text = score.ToString();
-    public void SetHighestScore(int highestScore) => CurrentScoreText.text = highestScore.ToString();
+    private void PlayerStartedGame(object sender, System.EventArgs e) => StartCoroutine(MoveScoresDownwards());
+    #endregion
+
+    private void UpdateCurrentScore(int score) => CurrentScoreText.text = score.ToString();
+    private void SetHighestScore(int highestScore) => CurrentScoreText.text = highestScore.ToString();
 
     public void ResetScores()
     {
         CurrentScoreText.text = 0.ToString();
-        HighestScoreText.text = 0.ToString();
+        HighestScoreText.text = "---";
 
         Scores.anchoredPosition = new Vector2(Scores.anchoredPosition.x, _scoresInitialPositionY);
     }

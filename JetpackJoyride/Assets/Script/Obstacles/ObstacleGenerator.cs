@@ -83,11 +83,6 @@ public class ObstacleGenerator : MonoBehaviour
             Type obstacleType = GetRandomObstacleFromList();
             _obstaclePools[obstacleType].Get();
 
-            foreach (Type type in _obstaclePools.Keys)
-            {
-                Debug.Log($"{type} \n ·Active: {_obstaclePools[type].CountActive} \n ·Inactive: {_obstaclePools[type].CountInactive}");
-            }
-
             yield return new WaitForSeconds(SecondsPerEnemy);
         }
     }
