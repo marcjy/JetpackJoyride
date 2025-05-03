@@ -6,7 +6,12 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public static event EventHandler OnGameStart;
+    public static UIManager Instance { get; private set; }
+
+    public event EventHandler OnUIStartsNewGame;
+
+    [Header("UI Managers")]
+    public UIGameOverManager UIGameOverManager;
 
     public float StartGameAnimationDuration = 2.0f;
     public Button StartGameButton;
@@ -24,10 +29,25 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         _starshipInitialPosition = Starship.rectTransform.anchoredPosition;
         _starshipAudioSource = Starship.GetComponent<AudioSource>();
     }
 
+    private void Start()
+    {
+        GameManager.OnResetGame += HandleResetGame;
+    }
+
+    private void HandleResetGame(object sender, EventArgs e) => ResetUI();
+
+    //Called from an invisible button in the UI.
     public void StartGame()
     {
         StartGameText.gameObject.SetActive(false);
@@ -35,10 +55,14 @@ public class UIManager : MonoBehaviour
         StartCoroutine(FadeOutBackground());
 
         StartGameButton.gameObject.SetActive(false);
-        OnGameStart?.Invoke(this, EventArgs.Empty);
+        OnUIStartsNewGame?.Invoke(this, EventArgs.Empty);
     }
 
-    public void ResetUI()
+
+    public void SubscribeToUIPlayAgainEvent(EventHandler handler) => UIGameOverManager.OnUITryAgainPressed += handler;
+    public void SubscribeToUIQuitEvent(EventHandler handler) => UIGameOverManager.OnUIQuitPressed += handler;
+
+    private void ResetUI()
     {
         StartGameText.gameObject.SetActive(true);
         BackgroundCanvasGroup.alpha = 1.0f;
@@ -48,6 +72,7 @@ public class UIManager : MonoBehaviour
         Starship.rectTransform.anchoredPosition = _starshipInitialPosition;
     }
 
+    #region Animations
     private IEnumerator MoveStarship()
     {
         _starshipAudioSource.Play();
@@ -79,4 +104,5 @@ public class UIManager : MonoBehaviour
 
         BackgroundCanvasGroup.alpha = 0.0f;
     }
+    #endregion
 }

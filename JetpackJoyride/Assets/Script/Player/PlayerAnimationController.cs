@@ -18,6 +18,8 @@ public class PlayerAnimationController : MonoBehaviour
 
         InputManager.Instance.OnThrusting += HandleJetpackOn;
         InputManager.Instance.OnStopThrusting += HandleJetpackOff;
+
+        GameManager.OnResetGame += HandleResetGame;
     }
 
     private void HandleJetpackOn(object sender, System.EventArgs e) => _animator.SetBool(PlayerAnimatorParams.IsJetpackOn, true);
@@ -27,4 +29,11 @@ public class PlayerAnimationController : MonoBehaviour
     private void HandleAirborne(object sender, System.EventArgs e) => _animator.SetBool(PlayerAnimatorParams.IsGrounded, false);
 
     private void HandleDeath(object sender, System.EventArgs e) => _animator.SetBool(PlayerAnimatorParams.IsDead, true);
+
+    private void HandleResetGame(object sender, EventArgs e)
+    {
+        _animator.SetBool(PlayerAnimatorParams.IsDead, false);
+        _animator.SetTrigger(PlayerAnimatorParams.Reset);
+    }
+
 }

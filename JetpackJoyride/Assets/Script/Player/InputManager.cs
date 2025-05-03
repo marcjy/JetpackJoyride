@@ -22,10 +22,13 @@ public class InputManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        UIManager.OnGameStart += OnPlayerStartedGame;
+        GameManager.OnStartNewGame += HandleStartNewGame;
+        GameManager.OnGameEnds += HandleGameEnds;
     }
 
-    private void OnPlayerStartedGame(object sender, EventArgs e) => _isPlaying = true;
+    private void HandleStartNewGame(object sender, EventArgs e) => _isPlaying = true;
+    private void HandleGameEnds(object sender, EventArgs e) => _isPlaying = false;
+
 
 
     public void Thrust(CallbackContext callbackContext)

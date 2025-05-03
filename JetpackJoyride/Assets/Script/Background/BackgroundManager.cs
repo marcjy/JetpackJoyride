@@ -24,22 +24,32 @@ public class BackgroundManager : MonoBehaviour
         TurnOff();
     }
 
-    public void TurnOn()
+    private void Start()
+    {
+        GameManager.OnStartNewGame += HandleStartNewGame;
+        GameManager.OnResetGame += HandleResetGame;
+        GameManager.OnGameEnds += HandleGameEnded;
+    }
+
+
+    private void HandleStartNewGame(object sender, System.EventArgs e) => TurnOn();
+    private void HandleResetGame(object sender, System.EventArgs e) => ResetPositions();
+    private void HandleGameEnded(object sender, System.EventArgs e) => TurnOff();
+
+    private void TurnOn()
     {
         foreach (BackgroundSlider slider in _sliders)
             slider.enabled = true;
     }
-
-    public void TurnOff()
-    {
-        foreach (BackgroundSlider slider in _sliders)
-            slider.enabled = false;
-    }
-
-    public void ResetPositions()
+    private void ResetPositions()
     {
         for (int i = 0; i < _sliders.Count; i++)
             _sliders[i].transform.position = _startingPositions[i];
+    }
+    private void TurnOff()
+    {
+        foreach (BackgroundSlider slider in _sliders)
+            slider.enabled = false;
     }
 
 }

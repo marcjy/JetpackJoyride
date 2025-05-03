@@ -22,26 +22,29 @@ public class UIScoreManager : MonoBehaviour
 
     private void Start()
     {
-        UIManager.OnGameStart += PlayerStartedGame;
+        GameManager.OnStartNewGame += HandleStartNewGame;
+        GameManager.OnResetGame += HandleResetGame;
 
-        GameManager.OnPlayerScores += PlayerHasScored;
-        GameManager.OnPlayerReachedNewHighScore += PlayerHasNewHighScore;
+        GameManager.OnPlayerScores += HandlePlayerScores;
+        GameManager.OnPlayerReachedNewHighScore += HandlePlayerReachedNewHighscore;
     }
 
     #region Event Handling
-    private void PlayerHasNewHighScore(object sender, int newHighScore) => SetHighestScore(newHighScore);
-    private void PlayerHasScored(object sender, int score) => UpdateCurrentScore(score);
+    private void HandlePlayerReachedNewHighscore(object sender, int newHighScore) => SetHighestScore(newHighScore);
+    private void HandlePlayerScores(object sender, int score) => UpdateCurrentScore(score);
 
-    private void PlayerStartedGame(object sender, System.EventArgs e) => StartCoroutine(MoveScoresDownwards());
+    private void HandleStartNewGame(object sender, System.EventArgs e) => StartCoroutine(MoveScoresDownwards());
+    private void HandleResetGame(object sender, System.EventArgs e) => ResetScores();
     #endregion
 
     private void UpdateCurrentScore(int score) => CurrentScoreText.text = score.ToString();
-    private void SetHighestScore(int highestScore) => CurrentScoreText.text = highestScore.ToString();
-
-    public void ResetScores()
+    private void SetHighestScore(int highestScore) => HighestScoreText.text = highestScore.ToString();
+    private void ResetScores()
     {
+        int highestScore = PlayerPrefs.GetInt("HighestScore");
+
         CurrentScoreText.text = 0.ToString();
-        HighestScoreText.text = "---";
+        HighestScoreText.text = highestScore != 0 ? highestScore.ToString() : "---";
 
         Scores.anchoredPosition = new Vector2(Scores.anchoredPosition.x, _scoresInitialPositionY);
     }
