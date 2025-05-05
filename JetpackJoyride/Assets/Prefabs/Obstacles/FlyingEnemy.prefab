@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4466169496913896648}
   - component: {fileID: 6056414430631101514}
   - component: {fileID: 5932529311085994261}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FlyingEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -173,6 +173,7 @@ MonoBehaviour:
   SpawnPositionX: 9.5
   LimitPositionX: -10
   SpeedX: 2
+  ExplosionPrefab: {fileID: 60219844313916972, guid: fb2da354ad0ef7a49881238d5491d6cd, type: 3}
   MaxPositionY: 2.65
   MinPositionY: -2.65
   MaxDistanceTraveled: 3

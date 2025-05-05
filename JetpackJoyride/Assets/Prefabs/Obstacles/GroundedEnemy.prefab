@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5164725024240379979}
   - component: {fileID: 8412578649022152553}
   - component: {fileID: 2549661648010196798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: GroundedEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -173,4 +173,5 @@ MonoBehaviour:
   SpawnPositionX: 9.5
   LimitPositionX: -10
   SpeedX: 2
+  ExplosionPrefab: {fileID: 60219844313916972, guid: fb2da354ad0ef7a49881238d5491d6cd, type: 3}
   SpawnPositionY: -2.75

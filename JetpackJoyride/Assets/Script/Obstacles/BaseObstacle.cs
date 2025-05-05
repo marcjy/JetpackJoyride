@@ -12,7 +12,19 @@ public abstract class BaseObstacle : MonoBehaviour
     public float LimitPositionX = -10;
     public float SpeedX = 2;
 
+    public GameObject ExplosionPrefab;
+
     public abstract void Init();
+    public virtual void Kill()
+    {
+        DisableObstacle();
+
+        GameObject explosion = Instantiate(ExplosionPrefab, gameObject.transform);
+
+        Animator animator = explosion.GetComponent<Animator>();
+        AnimatorClipInfo[] clipInfo = animator.GetCurrentAnimatorClipInfo(0);
+        Destroy(gameObject, clipInfo[0].clip.length);
+    }
 
     protected virtual void Start()
     {
@@ -25,5 +37,11 @@ public abstract class BaseObstacle : MonoBehaviour
 
         if (transform.position.x < LimitPositionX)
             OnShouldBeReleased?.Invoke(this, EventArgs.Empty);
+    }
+
+    private void DisableObstacle()
+    {
+        GetComponent<BoxCollider2D>().enabled = false;
+        this.enabled = false;
     }
 }
