@@ -85,6 +85,7 @@ public class ObstacleGenerator : MonoBehaviour
     }
     private void DestroyObstacleFromPool(BaseObstacle obstacle)
     {
+        _activeObjectsInPools.Remove(obstacle.GetInstanceID());
         obstacle.OnShouldBeReleased -= HandleObstacleShouldBeReleased;
     }
     private void ReleaseAllObjects()
