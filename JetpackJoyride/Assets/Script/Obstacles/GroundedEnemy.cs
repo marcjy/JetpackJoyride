@@ -16,6 +16,4 @@ public class GroundedEnemy : BaseObstacle
     {
         transform.position = new Vector3(SpawnPositionX, SpawnPositionY);
     }
-
-    public void Kill() => _animator.SetBool("isDead", true);
 }

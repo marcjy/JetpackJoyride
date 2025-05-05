@@ -25,12 +25,16 @@ public class GameManager : MonoBehaviour
     private int _currentScore;
     private Coroutine _scorePointsForSurvivingCoroutine;
 
+    private Vector3 _initialPlayerPosition;
+
     private const string PLAYER_PREF_HIGHEST_SCORE = "HighestScore";
 
     private void Awake()
     {
         _highestScore = PlayerPrefs.GetInt(PLAYER_PREF_HIGHEST_SCORE);
         _currentScore = 0;
+
+        _initialPlayerPosition = PlayerCollisionManager.transform.position;
     }
 
     void Start()
@@ -71,6 +75,9 @@ public class GameManager : MonoBehaviour
     {
         _currentScore = 0;
         OnResetGame?.Invoke(this, EventArgs.Empty);
+
+        PlayerCollisionManager.transform.position = _initialPlayerPosition;
+        Camera.main.GetComponent<AudioSource>().Play();
     }
 
     private IEnumerator PlayerScoresForSurviving()

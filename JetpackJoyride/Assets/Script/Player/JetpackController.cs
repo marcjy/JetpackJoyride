@@ -22,11 +22,12 @@ public class JetpackController : MonoBehaviour
         _jetpackOn = false;
         _playerRigidBody = GetComponent<Rigidbody2D>();
 
-        MachineGunParticleSystem.gameObject.SetActive(false);
-
         InputManager.Instance.OnThrusting += HandleStartThrusting;
         InputManager.Instance.OnStopThrusting += HandleStopThrusting;
+
+        GetComponent<PlayerCollisionManager>().OnEnemyCollision += HandlePlayerDeath;
     }
+
 
     private void HandleStartThrusting(object sender, System.EventArgs e)
     {
@@ -34,6 +35,12 @@ public class JetpackController : MonoBehaviour
         StartShooting();
     }
     private void HandleStopThrusting(object sender, EventArgs e)
+    {
+        _jetpackOn = false;
+        StopShooting();
+    }
+
+    private void HandlePlayerDeath(object sender, EventArgs e)
     {
         _jetpackOn = false;
         StopShooting();
@@ -58,12 +65,12 @@ public class JetpackController : MonoBehaviour
 
     private void StartShooting()
     {
-        MachineGunParticleSystem.gameObject.SetActive(true);
+        MachineGunParticleSystem.Play();
     }
 
     private void StopShooting()
     {
-        MachineGunParticleSystem.gameObject.SetActive(false);
+        MachineGunParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmitting);
     }
 
     private void KillEnemiesBeneath()
